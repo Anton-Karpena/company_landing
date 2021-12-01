@@ -117,3 +117,20 @@ scienceBtn.addEventListener('click', activateScience);
 foodBtn.addEventListener('click', activateFood);
 ecoBtn.addEventListener('click', activateEco);
 energyBtn.addEventListener('click', activateEnergy);
+
+// Form Block
+
+const formButtons = document.querySelectorAll('.industries__card-arrow');
+const formClose = document.getElementById('formClose');
+const form = document.querySelector('.form');
+
+const openForm = () => {
+  form.classList.add('formActive');
+};
+
+const closeForm = () => {
+  form.classList.remove('formActive');
+};
+
+formClose.addEventListener('click', closeForm);
+formButtons.forEach((item) => item.addEventListener('click', openForm));

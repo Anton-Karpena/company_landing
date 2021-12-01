@@ -217,10 +217,10 @@
       <section class="form">
         <div class="form__container">
           <div class="form__close">
-            <img class="form__close-img" src="./images/Icons/Cross.svg" />
+            <img class="form__close-img" id="formClose" src="./images/Icons/Cross.svg" />
           </div>
           <h4 class="form__head">Become a partner</h4>
-          <form class="form__form" action="#">
+          <form class="form__form" method="GET" action="#">
             <input
               class="form__name"
               type="text"
@@ -233,7 +233,6 @@
               type="tel"
               id="phone"
               name="phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               placeholder="Format: 000 123 44 55"
               required
             />
