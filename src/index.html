@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.scss">
-		<script defer type="module" src="index.js"></script>
-    <title>FE Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.scss" />
+    <title>Regular lab</title>
+    <link
+      rel="shortcut icon"
+      type="images/favicon.png"
+      href="./images/Icons/favicon.png"
+    />
   </head>
   <body>
-    FE Template
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__top-actions">
+          <a class="nav__logo" href="#">
+            <img src="./images/Icons/LOGO.svg" alt="Regular lab logo" />
+          </a>
+          <a class="nav__menu-opener" href="#menu">
+            <img src="./images/Icons/Burger_menu.svg" />
+          </a>
+        </div>
+      </nav>
+      <div class="menu" id="menu">
+        <div class="menu__top-actions">
+          <a class="menu__logo" href="#">
+            <img src="./images/Icons/LOGO.svg" alt="Regular lab logo" />
+          </a>
+          <a class="menu__close" href="#">
+            <img src="./images/Icons/Cross.svg" />
+          </a>
+        </div>
+        <div class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">IT Distribution</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Services and support</a>
+            </li>
+            <li class="menu__item">
+              <ul class="menu__drop" id="dropdown">
+                <div class="menu__drop--head">
+                  Partnership
+                  <img class="menu__drop--head-arrow" src="./images/Icons/Nav_arrow_black.svg">
+                </div>
+                <li class="menu__drop-item">
+                  <a>Vendors</a>
+                </li>
+                <li class="menu__drop-item">
+                  <a>Customers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">News & Press</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Career</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <script defer type="module" src="index.js"></script>
   </body>
 </html>
