@@ -1,10 +1,22 @@
 .nav {
+  @include onDesktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 60px;
+  }
 
   &__top-actions {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include onDesktop {
+      display: block;
+      padding: 0;
+    }
   }
 
   &__logo {
@@ -13,5 +25,9 @@
 
   &__menu-opener {
     text-decoration: none;
+
+    @include onDesktop {
+      display: none;
+    }
   }
 }

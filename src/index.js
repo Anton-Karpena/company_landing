@@ -1,4 +1,6 @@
-const dropDownButton = document.getElementById('dropdown');
+// Menu Block
+
+const dropDownMenuButton = document.getElementById('dropdown');
 const menuDropItem = document.querySelectorAll('.menu__dropdown-item');
 
 const dropMenu = () => {
@@ -9,4 +11,21 @@ const dropMenu = () => {
   }
 };
 
-dropDownButton.addEventListener('click', dropMenu);
+// Industries Block
+
+dropDownMenuButton.addEventListener('click', dropMenu);
+
+const scienceDropDownButton = document.getElementById('industries__science');
+const scienceText = document.querySelector('.industries__dropdown-text');
+
+const scienceDropDown = () => {
+  if (scienceText.classList.contains('selected')) {
+    scienceText.classList.remove('selected');
+    scienceDropDownButton.classList.remove('selected');
+  } else {
+    scienceText.classList.add('selected');
+    scienceDropDownButton.classList.add('selected');
+  }
+};
+
+scienceDropDownButton.addEventListener('click', scienceDropDown);

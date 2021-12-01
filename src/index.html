@@ -22,53 +22,81 @@
             <img src="./images/Icons/Burger_menu.svg" />
           </a>
         </div>
-      </nav>
-      <div class="menu" id="menu">
-        <div class="menu__top-actions">
-          <a class="menu__logo" href="#">
-            <img src="./images/Icons/LOGO.svg" alt="Regular lab logo" />
-          </a>
-          <a class="menu__close" href="#">
-            <img src="./images/Icons/Cross.svg" />
-          </a>
-        </div>
-        <div class="menu__nav">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">About Us</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">IT Distribution</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Services and support</a>
-            </li>
-            <li class="menu__item">
-              <div class="menu__dropdown">
-                <div class="menu__dropdown-head" id="dropdown">
-                  Partnership
+
+        <div class="menu" id="menu">
+          <div class="menu__top-actions">
+            <a class="menu__logo" href="#">
+              <img src="./images/Icons/LOGO.svg" alt="Regular lab logo" />
+            </a>
+            <a class="menu__close" href="#">
+              <img src="./images/Icons/Cross.svg" />
+            </a>
+          </div>
+          <div class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">IT Distribution</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Services and support</a>
+              </li>
+              <li class="menu__item">
+                <div class="menu__dropdown">
+                  <div class="menu__dropdown-head" id="dropdown">
+                    Partnership
+                  </div>
+                  <div class="menu__dropdown-item">
+                    <p class="menu__dropdown-text">Vendors</p>
+                    <p class="menu__dropdown-text">Customers</p>
+                  </div>
                 </div>
-                <p class="menu__dropdown-item">Vendors</p>
-                <p class="menu__dropdown-item">Customers</p>
-              </div>
-            <li class="menu__item">
-              <a class="menu__link" href="#">News & Press</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Career</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact Us</a>
-            </li>
-          </ul>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link" href="#">News & Press</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Career</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="industries">
-        
+        <h2 class="industries__head">Отрасли</h2>
+        <ul class="industries__list">
+          <li class="industries__item">Медицина</li>
+          <li class="industries__item">Фармацевтика</li>
+          <li class="industries__item">Криминалистика</li>
+          <li class="industries__item">Агро</li>
+          <li class="industries__item">Материаловедение</li>
+          <li class="industries__item">
+            <div class="industries__dropdown" id="industries__science">
+              Наука
+            </div>
+            <p class="industries__dropdown-text">
+              Предлагаем лучшие в своем классе решения для прикладных и научных
+              исследований в направлении химического анализа и молекулярной
+              биологии: профессиональное оборудование, расходные материалы и
+              внедрение современных методологических подходов.
+            </p>
+          </li>
+          <li class="industries__item">Пищевая промышленность</li>
+          <li class="industries__item">Экология</li>
+          <li class="industries__item">Энергетика</li>
+        </ul>
       </section>
       <section class="news">
+        <h2 class="news__header">Новости и вебинары</h2>
+        <div class="news__slider"></div>
       </section>
     </main>
     <script defer type="module" src="index.js"></script>
