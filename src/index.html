@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header>
       <nav class="nav">
         <div class="nav__top-actions">
           <a class="nav__logo" href="#">
@@ -44,19 +44,13 @@
               <a class="menu__link" href="#">Services and support</a>
             </li>
             <li class="menu__item">
-              <ul class="menu__drop" id="dropdown">
-                <div class="menu__drop--head">
+              <div class="menu__dropdown">
+                <div class="menu__dropdown-head" id="dropdown">
                   Partnership
-                  <img class="menu__drop--head-arrow" src="./images/Icons/Nav_arrow_black.svg">
                 </div>
-                <li class="menu__drop-item">
-                  <a>Vendors</a>
-                </li>
-                <li class="menu__drop-item">
-                  <a>Customers</a>
-                </li>
-              </ul>
-            </li>
+                <p class="menu__dropdown-item">Vendors</p>
+                <p class="menu__dropdown-item">Customers</p>
+              </div>
             <li class="menu__item">
               <a class="menu__link" href="#">News & Press</a>
             </li>
@@ -70,6 +64,13 @@
         </div>
       </div>
     </header>
+    <main>
+      <section class="industries">
+        
+      </section>
+      <section class="news">
+      </section>
+    </main>
     <script defer type="module" src="index.js"></script>
   </body>
 </html>
