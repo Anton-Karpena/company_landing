@@ -1,8 +1,9 @@
 @import "./styles/utils/fonts";
 @import "./styles/utils/variables";
 @import "./styles/utils/mixins";
-@import "./styles/utils/normalize.scss";
+@import "./styles/utils/normalize";
 @import "./styles/blocks/nav";
-@import "./styles/blocks/menu.scss";
-@import "./styles/blocks/industries.scss";
-@import "./styles/blocks/news.scss";
+@import "./styles/blocks/menu";
+@import "./styles/blocks/industries";
+@import "./styles/blocks/news";
+@import "./styles/blocks/form";

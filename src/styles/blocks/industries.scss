@@ -1,16 +1,16 @@
 .industries {
   @include onDesktop {
-    margin: 0 180px;
+    margin: 0 180px 60px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
 
   &__head {
-    color: $color-header;
-    font-weight: 500;
     margin: 0 0 42px;
+    color: $color-header;
     padding-left: 16px;
     padding-top: 20px;
+    font-weight: 500;
     font-size: 18px;
     font-family: "Exo 2", sans-serif;
 
@@ -42,7 +42,7 @@
     grid-column: 1 / 4;
     margin: 0;
     background:#fff;
-    background: linear-gradient(to right, #fff, #85858520) ;
+    background: linear-gradient(to right, #fff, #85858520);
   }
 
   &__item {
@@ -52,6 +52,11 @@
     padding: 18px 0 18px 36px;
     border-top: 1px solid $color-light-grey;
     transition: $transition-time;
+
+    &:hover {
+      color: $color-red;
+      cursor: pointer;
+    }
 
     @include onDesktop {
       font-size: 24px;
@@ -64,6 +69,11 @@
         color: $color-red;
         background-color: $color-white;
         border-right: none;
+
+        &:first-child {
+          background:#fff;
+          background: linear-gradient(to top, #fff, #85858510) ;
+        }
       }
     }
   }
@@ -74,11 +84,6 @@
     @include onDesktop {
       border-bottom: 1px solid $color-light-grey;
     }
-  }
-
-  &:hover {
-    color: $color-red;
-    cursor: pointer;
   }
 
   &__dropdown {
@@ -101,6 +106,7 @@
 
   &__content {
     display: none;
+    position: relative;
 
     @include onDesktop {
       display: block;
@@ -113,10 +119,10 @@
   &__card {
     position: absolute;
     opacity: 0;
-    transition: $transition-time;
 
     &.active {
       opacity: 1;
+      z-index: 2;
     }
 
     &-header {
@@ -137,6 +143,12 @@
 
     &-arrow {
       margin-left: 80px;
+      transition: 0.8s;
+
+      &:hover {
+        transform: rotate(360deg) scale(1.2);
+        cursor: pointer;
+      }
     }
   }
 }
