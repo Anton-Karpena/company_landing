@@ -30,6 +30,14 @@
     }
   }
 
+  &__close {
+    transition: $transition-time;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+
   &__nav {
     display: flex;
     flex-direction: column;

@@ -41,8 +41,8 @@
     padding: 0;
     grid-column: 1 / 4;
     margin: 0;
-    background:#fff;
-    background: linear-gradient(to right, #fff, #85858520);
+    background: $color-white;
+    background: linear-gradient(to right, $color-white, #85858520);
   }
 
   &__item {
@@ -119,6 +119,12 @@
   &__card {
     position: absolute;
     opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/Pictures/Industries.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
 
     &.active {
       opacity: 1;
@@ -143,10 +149,10 @@
 
     &-arrow {
       margin-left: 80px;
-      transition: 0.8s;
+      transition: $transition-time;
 
       &:hover {
-        transform: rotate(360deg) scale(1.2);
+        transform: scale(1.2);
         cursor: pointer;
       }
     }

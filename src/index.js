@@ -120,7 +120,7 @@ energyBtn.addEventListener('click', activateEnergy);
 
 // Form Block
 
-const formButtons = document.querySelectorAll('.industries__card-arrow');
+const formButtons = document.querySelectorAll('.formOpener');
 const formClose = document.getElementById('formClose');
 const form = document.querySelector('.form');
 
